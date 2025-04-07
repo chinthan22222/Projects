@@ -17,7 +17,7 @@ A sleek web app that recommends movies and books based on user preferences using
 
 - **Frontend:** React, Next.js
 - **Styling:** CSS / TailwindCSS 
-- **API:** [OMDB API](https://www.omdbapi.com) Add API key to .env.local
+- **API:** [OMDB API](https://www.omdbapi.com)  Add API key to .env.local
 - **Package Manager:** npm
 
 ---
