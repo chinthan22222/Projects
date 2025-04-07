@@ -1,12 +1,17 @@
 export const fetchMovies = async (query) => {
   try {
-    const res = await fetch(`https://www.omdbapi.com/?s=${query}&type=movie&apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}`);
+    const apiKey = process.env.NEXT_PUBLIC_OMDB_API_KEY; // Fetch API key from environment variable
+    if (!apiKey) {
+      throw new Error('API key is missing. Please set NEXT_PUBLIC_OMDB_API_KEY in .env.local.');
+    }
+
+    const res = await fetch(`http://www.omdbapi.com/?s=${query}&type=movie&apikey=${apiKey}`);
     const data = await res.json();
     if (data.Response === 'True') {
       // Fetch detailed data for each movie
       const detailedMovies = await Promise.all(
         data.Search.map(async (movie) => {
-          const movieRes = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=192c0064`);
+          const movieRes = await fetch(`http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${apiKey}`);
           return await movieRes.json();
         })
       );
