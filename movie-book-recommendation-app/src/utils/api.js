@@ -1,6 +1,6 @@
 export const fetchMovies = async (query) => {
   try {
-    const res = await fetch(`http://www.omdbapi.com/?s=${query}&type=movie&apikey=192c0064`);
+    const res = await fetch(`https://www.omdbapi.com/?s=${query}&type=movie&apikey=${process.env.NEXT_PUBLIC_OMDB_API_KEY}`);
     const data = await res.json();
     if (data.Response === 'True') {
       // Fetch detailed data for each movie
