@@ -26,7 +26,7 @@ A sleek web app that recommends movies and books based on user preferences using
 
 ```bash
 # Clone the repository
-git clone https://github.com/chinthan22222/movie-book-recommendation-app.git
+git clone https://github.com/chinthan22222/Projects/movie-book-recommendation-app.git
 
 # Navigate to the project directory
 cd movie-book-recommendation-app
