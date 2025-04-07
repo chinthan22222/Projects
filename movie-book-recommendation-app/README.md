@@ -25,14 +25,15 @@ A sleek web app that recommends movies and books based on user preferences using
 ## 📦 Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/chinthan22222/Projects/movie-book-recommendation-app.git
+# Clone the full repo
+git clone https://github.com/chinthan22222/Projects.git
 
-# Navigate to the project directory
-cd movie-book-recommendation-app
+# Go into the project folder you organized
+cd Projects/movie-book-recommendation-app
 
 # Install dependencies
 npm install
 
-# Start development server
+# Run the app
 npm run dev
+
