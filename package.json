@@ -1,0 +1,22 @@
+{
+    "name": "movie-book-recommendation-app",
+    "version": "1.0.0",
+    "description": "A movie and book recommendation app",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^15.2.4",
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "devDependencies": {
+        "eslint": "latest",
+        "eslint-config-next": "latest"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+}

@@ -1,0 +1,53 @@
+.container {
+    padding: 20px;
+    text-align: center;
+    background-image: url('/images/img.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255); /* Ensure text is visible on the background */
+    min-height: 100vh;
+  }
+  
+  .hero {
+    margin-top: 100px; /* Add margin to bring it further down */
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for better text visibility */
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .moviesContainer {
+    margin-top: 40px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .links {
+    margin-top: 40px;
+  }
+  
+  .link {
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .link:hover {
+    background-color: #005bb5;
+  }
+  .title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }

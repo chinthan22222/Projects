@@ -1,0 +1,12 @@
+node_modules
+.env
+.DS_Store
+*.log
+android/.gradle
+ios/Pods
+__MACOSX
+dist
+build
+.exponode_modules/
+node_modules/
+node_modules/

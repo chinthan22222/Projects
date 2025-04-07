@@ -1,0 +1,49 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background */
+  color: white;
+  padding: 10px 30px; /* Adjust padding for better spacing */
+  position: fixed;
+  top: 0;
+  left: 0; /* Ensure it starts from the left edge */
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Ensure it appears above other elements */
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adjust spacing between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  font-size: 16px;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 15px; /* Add padding for clickable area */
+  border-radius: 5px; /* Rounded corners for hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navList li a:hover {
+  background-color: #0070f3; /* Highlight background on hover */
+  color: white; /* Ensure text remains white */
+}
